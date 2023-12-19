@@ -15,10 +15,10 @@ namespace Project.Modelos
         {
         }
 
-        public override void HacerRuido()
-        {
-            Console.WriteLine("cui cui");
-        }
+       // public override void HacerRuido()
+       // {
+       //     Console.WriteLine("cui cui");
+       // }
     }
 
 }
