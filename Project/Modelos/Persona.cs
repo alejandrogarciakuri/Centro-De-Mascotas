@@ -29,10 +29,20 @@ namespace Project.Modelos
 
         public Mascota ObtenerMascotaPorId(string id)
         {
-            return Mascotas.Find(m => m.Id == id);
+            foreach (var mascota in Mascotas)
+            {
+                if (mascota.Id == id)
+                {
+                    return mascota;
+                }
+            }
+            return null;
         }
 
-        public void AgregarMascota(Mascota mascota)
+
+    }
+
+    public void AgregarMascota(Mascota mascota)
         {
             Mascotas.Add(mascota);
         }
@@ -46,6 +56,6 @@ namespace Project.Modelos
                 }
             }
         }
-    }
+ }
 
-}
+
