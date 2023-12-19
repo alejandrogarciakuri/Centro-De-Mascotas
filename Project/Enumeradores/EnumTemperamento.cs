@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project.Enumeradores
 {
-   
-        public enum Temperamento
+    public enum Temperamento
     {
         Amable,
         Nervioso,
