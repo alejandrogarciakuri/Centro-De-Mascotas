@@ -11,8 +11,23 @@ namespace Project.Modelos
     // Clase Perro
     public class Perro : Mascota, IAcariciable
     {
-        public Perro(string nombre, int edad, Temperamento temperamento)
-            : base(nombre, edad, temperamento)
+        private int _edad;
+        public int Edad
+        {
+            get { return _edad; }
+            set
+            {
+                if (Edad > 14)
+                {
+                    throw new Exception("La edad maxima de un perro solo es de 14 años.");
+                    return;
+                }
+
+                _edad = value;
+            }
+        }
+
+        public Perro(string nombre, int edad, Temperamento temperamento) : base(nombre, edad, temperamento)
         {
         }
 
