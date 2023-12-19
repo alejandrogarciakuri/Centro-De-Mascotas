@@ -29,12 +29,13 @@ namespace Project.Modelos
 
         public Perro(string nombre, int edad, Temperamento temperamento) : base(nombre, edad, temperamento)
         {
+            Edad = edad;
         }
 
-          public override void HacerRuido()
-    {
-        Console.WriteLine("guau guau");
-    }
+       // public override void HacerRuido()
+       //   {
+       // Console.WriteLine("guau guau");
+       // }
 
         public void MoverCola()
         {
