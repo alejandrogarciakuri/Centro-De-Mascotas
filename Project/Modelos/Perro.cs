@@ -16,5 +16,19 @@ namespace Project.Modelos
         {
         }
 
+        public void MoverCola()
+        {
+            Console.WriteLine("Mueve la cola");
+        }
+
+        public void Gruñir()
+        {
+            Console.WriteLine("Grr real hasta la muerte");
+        }
+
+        public void ResponderACaricia()
+        {
+            Console.WriteLine("Mueve la cola");
+        }
     }
-    }
+ }
