@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Enumeradores\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Enumeradores\" />
+  </ItemGroup>
 </Project>
