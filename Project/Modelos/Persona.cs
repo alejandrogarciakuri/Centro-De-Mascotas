@@ -12,7 +12,23 @@ namespace Project.Modelos
         private static int contadorId = 1;
 
         public int Id { get; }
-        public string Nombre { get; }
+
+        private string _nombre;
+        public string Nombre
+        {
+            get { return _nombre; }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new Exception("El nombre de la persona no debe estar en blanco.");
+                    return;
+                }
+
+                _nombre = value;
+            }
+        }
+
         public List<Mascota> Mascotas { get; }
 
         public Persona(string nombre)
@@ -39,13 +55,12 @@ namespace Project.Modelos
             return null;
         }
 
-
-    }
-
-    public void AgregarMascota(Mascota mascota)
+        public void AgregarMascota(Mascota mascota)
         {
+            Console.WriteLine($"{this.Nombre} agrega a {mascota.Nombre} a sus mascotas");
             Mascotas.Add(mascota);
         }
+
         public void AcariciarMascotas()
         {
             foreach (var mascota in Mascotas)
@@ -56,6 +71,6 @@ namespace Project.Modelos
                 }
             }
         }
- }
 
-
+    }
+}
