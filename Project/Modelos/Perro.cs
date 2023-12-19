@@ -31,6 +31,11 @@ namespace Project.Modelos
         {
         }
 
+          public override void HacerRuido()
+    {
+        Console.WriteLine("guau guau");
+    }
+
         public void MoverCola()
         {
             Console.WriteLine("Mueve la cola");
