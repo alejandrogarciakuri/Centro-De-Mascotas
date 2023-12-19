@@ -9,10 +9,8 @@
 
   <ItemGroup>
     <None Remove="Enumeradores\" />
-    <None Remove="Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Enumeradores\" />
-    <Folder Include="Interfaces\" />
   </ItemGroup>
 </Project>
