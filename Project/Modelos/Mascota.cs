@@ -43,7 +43,19 @@ namespace Project.Modelos
 
         public void HacerRuido()
         {
-            //Falta por implementar el ruido dependiendo de la especie.
+
+            if (this is Perro)
+            {
+                Console.WriteLine("Guau guau");
+            }
+            else if (this is Gato)
+            {
+                Console.WriteLine("Miau");
+            }
+            else if (this is Capibara)
+            {
+                Console.WriteLine("Cui cui");
+            }
         }
 
         public void CambiarDueno(Persona nuevoDueno)
